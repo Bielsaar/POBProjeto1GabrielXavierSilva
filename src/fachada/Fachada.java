@@ -127,7 +127,7 @@ public class Fachada {
 		
 	}
 	
-	/*TODO*/public static void apagarVisualizacao(int id) throws  Exception{
+	public static void apagarVisualizacao(int id) throws  Exception{
 		DAO.begin();
 		Visualizacao vi = daovisualizacao.read(id);
 		if (vi==null) {
@@ -146,27 +146,30 @@ public class Fachada {
 		DAO.commit();
 	}
 	
-	/*TODO*/public static List<Video> listarVideos() {
+	public static List<Video> listarVideos() {
 		return daovideo.readAll();
 	}
 	
-	/*TODO*/public static List<Visualizacao> listarVisualizacao() {
+	public static List<Visualizacao> listarVisualizacao() {
 		return daovisualizacao.readAll();
 	}
 	
-	/*TODO*/public static List<Usuario> listarUsuarios() {
+	public static List<Usuario> listarUsuarios() {
 		return daousuario.readAll();
 	}
+	public static List<Assunto> listarAssuntos() {
+		return daoassunto.readAll();
+	}
 	
-	/*TODO*/public static List<Video> consultarVideosPorAssunto(String palavra) {
+	public static List<Video> consultarVideosPorAssunto(String palavra) {
 		return daovideo.consultarVideoPorAssunto(palavra);
 	}
 	
-	/*TODO*/public static List<Video> consultarVideosPorUsuario(String email) {
+	public static List<Video> consultarVideosPorUsuario(String email) {
 		return daovideo.consultarVideoPorUsuario(email);
 	}
 	
-	/*TODO*/public static List<Usuario> consultarUsuariosPorVideo(String link) {
+	public static List<Usuario> consultarUsuariosPorVideo(String link) {
 		return daousuario.consultarUsuariosPorVideo(link);
 	}
 	

@@ -18,6 +18,16 @@ public class Video {
 	public String getNome() {
 		return nome;
 	}
+	public String getLink() {
+		return link;
+	}
+	
+	public double getMedia() {
+		return media;
+	}
+	public List<Visualizacao> getVisualizacoes() {
+		return visualizacoes;
+	}
 	public List<Assunto> getAssuntos() {
 		return this.assuntos;
 	}

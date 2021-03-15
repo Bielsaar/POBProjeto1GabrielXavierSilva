@@ -16,6 +16,14 @@ public class Visualizacao {
 		this.video = video;
 	}
 	
+	public int getId() {
+		return id;
+	}
+
+	public String getDatahora() {
+		return datahora;
+	}
+
 	public int getNota() {
 		return this.nota;
 	}
